@@ -1,0 +1,25 @@
+
+#overallaqi{
+    color: blue;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        margin: 10px;
+    }
+    
+    .header1{
+        font-size: 15px!important; 
+    }
+    .header2{
+        font-size: 12px!important; 
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .airindex{
+        width: 300px!important;
+    }
+}
