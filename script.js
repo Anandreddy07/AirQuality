@@ -74,8 +74,4 @@ submitbutton.addEventListener("click", (e) => {
     getAir(inputcityName.value);
   });
 
-inputcityName.addEventListener("keypress",(e)=>{
-  if(e.key=="Enter"){
-    submitbutton.click()
-  }
-})
+  
