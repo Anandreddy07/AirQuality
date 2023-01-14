@@ -40,8 +40,8 @@ fetch('https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city='+ ci
         
          }
          else if(a>=50 && a<=100){
-        overallaqi.style.color="yellow";
-        index.style.color="yellow";
+        overallaqi.style.color="green";
+        index.style.color="green";
         index.innerText=" (Good)"
          }
          else if(a>=100 && a<=150){
@@ -74,4 +74,8 @@ submitbutton.addEventListener("click", (e) => {
     getAir(inputcityName.value);
   });
 
-  
+inputcityName.addEventListener("keypress",(e)=>{
+  if(e.key=="Enter"){
+    submitbutton.click()
+  }
+})
